@@ -1,35 +1,21 @@
-# JPush PhoneGap / Cordova Plugin
+# @Ionic-Native-Cordova-Plugin
 
-[![Build Status](https://travis-ci.org/jpush/jpush-phonegap-plugin.svg?branch=master)](https://travis-ci.org/jpush/jpush-phonegap-plugin)
-[![release](https://img.shields.io/badge/release-3.2.1-blue.svg)](https://github.com/jpush/jpush-phonegap-plugin/releases)
-[![platforms](https://img.shields.io/badge/platforms-iOS%7CAndroid-lightgrey.svg)](https://github.com/jpush/jpush-phonegap-plugin)
-[![weibo](https://img.shields.io/badge/weibo-JPush-blue.svg)](http://weibo.com/jpush?refer_flag=1001030101_&is_all=1)
-
-支持 iOS, Android 的 Cordova 推送插件。
-> 如需要 IM 功能的插件，可关注 [JMessage Cordova Plugin](https://github.com/jpush/jmessage-phonegap-plugin)。
-> 如需要短信验证码功能的插件，可关注 [JSMS Cordova Plugin](https://github.com/jpush/cordova-plugin-jsms)。
+支持 iOS, Android 的 Cordova 推送插件(@ionic-native📦封装)。
 
 ## Install
 
 - 通过 Cordova Plugins 安装，要求 Cordova CLI 5.0+：
 
 	```
-	cordova plugin add jpush-phonegap-plugin --variable APP_KEY=your_jpush_appkey
+	ionic cordova plugin add jpush-phonegap-plugin --variable APP_KEY=your_jpush_appkey
 	```
 
 - 或直接通过 url 安装：
 
 	```
-	cordova plugin add https://github.com/jpush/jpush-phonegap-plugin.git --variable APP_KEY=your_jpush_appkey  
+	ionic cordova plugin add https://github.com/jpush/jpush-phonegap-plugin.git --variable APP_KEY=your_jpush_appkey  
 	```
 
-- 或下载到本地安装：
-
-	```
-	cordova plugin add Your_Plugin_Path  --variable APP_KEY=your_jpush_appkey
-	```
-
-> 在使用 Xcode 8 调试 iOS 项目时，需要先在项目配置界面的 Capabilities 中打开 Push Notifications 开关。
 
 ## Usage
 ### API
@@ -37,6 +23,75 @@
 - [iOS](/doc/iOS_API.md)
 - [Android](/doc/Android_detail_api.md)
 
+# Usage
+
+The dist directory will contain a sub directory @ionic-native with all the packages compiled in there. Copy the package(s) you created/modified to your app's node_modules under the @ionic-native directory. (e.g. cp -r dist/@ionic-native/plugin-name ../my-app/node_modules/@ionic-native/).
+
+⚠️⚠️ 将 dist/@ionic-native 的 jpush文件夹复制到 ionic2项目的 node_modules/@ionic-native/ 下
+
+```
+Add Plugins to Your App's Module
+
+After installing a plugin’s package, add it to your app’s NgModule.
+
+
+...
+
+import { JPushPlugin } from '@ionic-native/jpush';
+
+...
+
+@NgModule({
+  ...
+
+  providers: [
+    ...
+    JPushPlugin
+    ...
+  ]
+  ...
+})
+export class AppModule { }
+
+```
+
+```
+import { JPushPlugin } from '@ionic-native/jpush';
+
+constructor(private jpush: JPushPlugin) {
+	this.init();
+	//延迟执行，等极光完全初始化
+	setTimeout(()=>{
+		this.setAlias( "Alias" );
+	},300)
+}
+
+init(){
+    //初始化极光
+    this.jpush.init();
+    
+    //收到通知时会触发该事件。
+    document.addEventListener("jpush.receiveNotification", function (event) {
+        alert( JSON.stringify( event ) );
+    }, false);
+    
+}
+
+//绑定别名
+setAlias( Alias : string ){
+	jpush.setAlias( Alias ).then((res)=>{
+        	alert( JSON.stringify(res) );
+      	}).catch((err)=>{
+        	alert( JSON.stringify(err) );
+      	});
+}
+
+............
+
+...
+
+
+```
 
 ## Support
 - QQ 群：513752928
