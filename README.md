@@ -1,6 +1,6 @@
 # @Ionic-Native-Cordova-Plugin
 
-支持 iOS, Android 的 Cordova 推送插件(@ionic-native📦封装)。
+支持 iOS, Android 的 Cordova 极光推送插件( ionic2/3  @ionic-native📦封装)。
 
 ## Install
 
