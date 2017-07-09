@@ -58,7 +58,7 @@ export class AppModule { }
 ```
 import { JPushPlugin } from '@ionic-native/jpush';
 
-constructor(private jpush: JPushPlugin) {
+constructor(public jpush: JPushPlugin) {
 	this.init();
 	//延迟执行，等极光完全初始化
 	setTimeout(()=>{
