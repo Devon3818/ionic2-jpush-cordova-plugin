@@ -1,5 +1,14 @@
 # 通用 API 说明（同时适用于 Android 和 iOS 系统）
 
+```
+import { JPushPlugin } from '@ionic-native/jpush';
+
+constructor( public jpush: JPushPlugin ) {
+  ......
+}
+
+```
+
 - [停止与恢复推送服务](#停止与恢复推送服务)
 - [获取 RegistrationID](#获取-registrationid)
 - [设置别名与标签](#设置别名与标签)
