@@ -115,10 +115,10 @@ var JPushPlugin = (function (_super) {
     JPushPlugin.prototype.clearNotificationById = function (id) {
         return; // We add return; here to avoid any IDE / Compiler errors
     };
-    JPushPlugin.prototype.setPushTime = function () {
+    JPushPlugin.prototype.setPushTime = function (arg1, arg2, arg3) {
         return; // We add return; here to avoid any IDE / Compiler errors
     };
-    JPushPlugin.prototype.setSilenceTime = function () {
+    JPushPlugin.prototype.setSilenceTime = function (arg1, arg2, arg3, arg4) {
         return; // We add return; here to avoid any IDE / Compiler errors
     };
     JPushPlugin.prototype.setBasicPushNotificationBuilder = function () {
@@ -130,7 +130,7 @@ var JPushPlugin = (function (_super) {
     JPushPlugin.prototype.setLatestNotificationNum = function (arg1) {
         return; // We add return; here to avoid any IDE / Compiler errors
     };
-    JPushPlugin.prototype.addLocalNotification = function () {
+    JPushPlugin.prototype.addLocalNotification = function (arg1, arg2, arg3, arg4, arg5, arg6) {
         return; // We add return; here to avoid any IDE / Compiler errors
     };
     JPushPlugin.prototype.removeLocalNotification = function (arg1) {
@@ -154,7 +154,7 @@ var JPushPlugin = (function (_super) {
     JPushPlugin.prototype.getApplicationIconBadgeNumber = function () {
         return; // We add return; here to avoid any IDE / Compiler errors
     };
-    JPushPlugin.prototype.addLocalNotificationForIOS = function () {
+    JPushPlugin.prototype.addLocalNotificationForIOS = function (arg1, arg2, arg3, arg4, arg5) {
         return; // We add return; here to avoid any IDE / Compiler errors
     };
     JPushPlugin.prototype.deleteLocalNotificationWithIdentifierKeyInIOS = function (arg1) {
@@ -169,7 +169,7 @@ var JPushPlugin = (function (_super) {
     JPushPlugin.prototype.stopLogPageView = function (arg1) {
         return; // We add return; here to avoid any IDE / Compiler errors
     };
-    JPushPlugin.prototype.beginLogPageView = function () {
+    JPushPlugin.prototype.beginLogPageView = function (arg1, arg2) {
         return; // We add return; here to avoid any IDE / Compiler errors
     };
     JPushPlugin.prototype.setDebugModeFromIos = function () {
@@ -181,13 +181,13 @@ var JPushPlugin = (function (_super) {
     JPushPlugin.prototype.setCrashLogON = function () {
         return; // We add return; here to avoid any IDE / Compiler errors
     };
-    JPushPlugin.prototype.setLocation = function () {
+    JPushPlugin.prototype.setLocation = function (arg1, arg2) {
         return; // We add return; here to avoid any IDE / Compiler errors
     };
     JPushPlugin.prototype.isPlatformIOS = function () {
         return; // We add return; here to avoid any IDE / Compiler errors
     };
-    JPushPlugin.prototype.addDismissActions = function () {
+    JPushPlugin.prototype.addDismissActions = function (arg1, arg2) {
         return; // We add return; here to avoid any IDE / Compiler errors
     };
     return JPushPlugin;
@@ -207,247 +207,247 @@ __decorate([
     Cordova(),
     __metadata("design:type", Function),
     __metadata("design:paramtypes", []),
-    __metadata("design:returntype", Observable)
+    __metadata("design:returntype", Promise)
 ], JPushPlugin.prototype, "init", null);
 __decorate([
     Cordova(),
     __metadata("design:type", Function),
     __metadata("design:paramtypes", []),
-    __metadata("design:returntype", Observable)
+    __metadata("design:returntype", Promise)
 ], JPushPlugin.prototype, "stopPush", null);
 __decorate([
     Cordova(),
     __metadata("design:type", Function),
     __metadata("design:paramtypes", []),
-    __metadata("design:returntype", Observable)
+    __metadata("design:returntype", Promise)
 ], JPushPlugin.prototype, "resumePush", null);
 __decorate([
     Cordova(),
     __metadata("design:type", Function),
     __metadata("design:paramtypes", []),
-    __metadata("design:returntype", Observable)
+    __metadata("design:returntype", Promise)
 ], JPushPlugin.prototype, "isPushStopped", null);
 __decorate([
     Cordova(),
     __metadata("design:type", Function),
     __metadata("design:paramtypes", [Boolean]),
-    __metadata("design:returntype", Observable)
+    __metadata("design:returntype", void 0)
 ], JPushPlugin.prototype, "setDebugMode", null);
 __decorate([
     Cordova(),
     __metadata("design:type", Function),
     __metadata("design:paramtypes", []),
-    __metadata("design:returntype", Observable)
+    __metadata("design:returntype", Promise)
 ], JPushPlugin.prototype, "getRegistrationID", null);
 __decorate([
     Cordova(),
     __metadata("design:type", Function),
     __metadata("design:paramtypes", [Object, Object]),
-    __metadata("design:returntype", Observable)
+    __metadata("design:returntype", Promise)
 ], JPushPlugin.prototype, "setTagsWithAlias", null);
 __decorate([
     Cordova(),
     __metadata("design:type", Function),
     __metadata("design:paramtypes", [Object]),
-    __metadata("design:returntype", Observable)
+    __metadata("design:returntype", Promise)
 ], JPushPlugin.prototype, "setTags", null);
 __decorate([
     Cordova(),
     __metadata("design:type", Function),
     __metadata("design:paramtypes", [Object]),
-    __metadata("design:returntype", Observable)
+    __metadata("design:returntype", Promise)
 ], JPushPlugin.prototype, "setAlias", null);
 __decorate([
     Cordova(),
     __metadata("design:type", Function),
     __metadata("design:paramtypes", []),
-    __metadata("design:returntype", Observable)
+    __metadata("design:returntype", Promise)
 ], JPushPlugin.prototype, "getUserNotificationSettings", null);
 __decorate([
     Cordova(),
     __metadata("design:type", Function),
     __metadata("design:paramtypes", []),
-    __metadata("design:returntype", Observable)
+    __metadata("design:returntype", Promise)
 ], JPushPlugin.prototype, "receiveMessageInAndroidCallback", null);
 __decorate([
     Cordova(),
     __metadata("design:type", Function),
     __metadata("design:paramtypes", []),
-    __metadata("design:returntype", Observable)
+    __metadata("design:returntype", Promise)
 ], JPushPlugin.prototype, "openNotificationInAndroidCallback", null);
 __decorate([
     Cordova(),
     __metadata("design:type", Function),
     __metadata("design:paramtypes", [Boolean]),
-    __metadata("design:returntype", Observable)
+    __metadata("design:returntype", void 0)
 ], JPushPlugin.prototype, "setStatisticsOpen", null);
 __decorate([
     Cordova(),
     __metadata("design:type", Function),
     __metadata("design:paramtypes", [Object]),
-    __metadata("design:returntype", Observable)
+    __metadata("design:returntype", void 0)
 ], JPushPlugin.prototype, "reportNotificationOpened", null);
 __decorate([
     Cordova(),
     __metadata("design:type", Function),
     __metadata("design:paramtypes", []),
-    __metadata("design:returntype", Observable)
+    __metadata("design:returntype", void 0)
 ], JPushPlugin.prototype, "clearAllNotification", null);
 __decorate([
     Cordova(),
     __metadata("design:type", Function),
     __metadata("design:paramtypes", [Object]),
-    __metadata("design:returntype", Observable)
+    __metadata("design:returntype", void 0)
 ], JPushPlugin.prototype, "clearNotificationById", null);
 __decorate([
     Cordova(),
     __metadata("design:type", Function),
-    __metadata("design:paramtypes", []),
-    __metadata("design:returntype", Observable)
+    __metadata("design:paramtypes", [Object, Object, Object]),
+    __metadata("design:returntype", void 0)
 ], JPushPlugin.prototype, "setPushTime", null);
 __decorate([
     Cordova(),
     __metadata("design:type", Function),
-    __metadata("design:paramtypes", []),
-    __metadata("design:returntype", Observable)
+    __metadata("design:paramtypes", [Object, Object, Object, Object]),
+    __metadata("design:returntype", void 0)
 ], JPushPlugin.prototype, "setSilenceTime", null);
 __decorate([
     Cordova(),
     __metadata("design:type", Function),
     __metadata("design:paramtypes", []),
-    __metadata("design:returntype", Observable)
+    __metadata("design:returntype", void 0)
 ], JPushPlugin.prototype, "setBasicPushNotificationBuilder", null);
 __decorate([
     Cordova(),
     __metadata("design:type", Function),
     __metadata("design:paramtypes", []),
-    __metadata("design:returntype", Observable)
+    __metadata("design:returntype", void 0)
 ], JPushPlugin.prototype, "setCustomPushNotificationBuilder", null);
 __decorate([
     Cordova(),
     __metadata("design:type", Function),
     __metadata("design:paramtypes", [Object]),
-    __metadata("design:returntype", Observable)
+    __metadata("design:returntype", void 0)
 ], JPushPlugin.prototype, "setLatestNotificationNum", null);
 __decorate([
     Cordova(),
     __metadata("design:type", Function),
-    __metadata("design:paramtypes", []),
-    __metadata("design:returntype", Observable)
+    __metadata("design:paramtypes", [Object, Object, Object, Object, Object, Object]),
+    __metadata("design:returntype", void 0)
 ], JPushPlugin.prototype, "addLocalNotification", null);
 __decorate([
     Cordova(),
     __metadata("design:type", Function),
     __metadata("design:paramtypes", [Object]),
-    __metadata("design:returntype", Observable)
+    __metadata("design:returntype", void 0)
 ], JPushPlugin.prototype, "removeLocalNotification", null);
 __decorate([
     Cordova(),
     __metadata("design:type", Function),
     __metadata("design:paramtypes", []),
-    __metadata("design:returntype", Observable)
+    __metadata("design:returntype", void 0)
 ], JPushPlugin.prototype, "clearLocalNotifications", null);
 __decorate([
     Cordova(),
     __metadata("design:type", Function),
     __metadata("design:paramtypes", []),
-    __metadata("design:returntype", Observable)
+    __metadata("design:returntype", void 0)
 ], JPushPlugin.prototype, "startJPushSDK", null);
 __decorate([
     Cordova(),
     __metadata("design:type", Function),
     __metadata("design:paramtypes", [Object]),
-    __metadata("design:returntype", Observable)
+    __metadata("design:returntype", void 0)
 ], JPushPlugin.prototype, "setBadge", null);
 __decorate([
     Cordova(),
     __metadata("design:type", Function),
     __metadata("design:paramtypes", []),
-    __metadata("design:returntype", Observable)
+    __metadata("design:returntype", void 0)
 ], JPushPlugin.prototype, "resetBadge", null);
 __decorate([
     Cordova(),
     __metadata("design:type", Function),
     __metadata("design:paramtypes", [Object]),
-    __metadata("design:returntype", Observable)
+    __metadata("design:returntype", void 0)
 ], JPushPlugin.prototype, "setApplicationIconBadgeNumber", null);
 __decorate([
     Cordova(),
     __metadata("design:type", Function),
     __metadata("design:paramtypes", []),
-    __metadata("design:returntype", Observable)
+    __metadata("design:returntype", Promise)
 ], JPushPlugin.prototype, "getApplicationIconBadgeNumber", null);
 __decorate([
     Cordova(),
     __metadata("design:type", Function),
-    __metadata("design:paramtypes", []),
-    __metadata("design:returntype", Observable)
+    __metadata("design:paramtypes", [Object, Object, Object, Object, Object]),
+    __metadata("design:returntype", void 0)
 ], JPushPlugin.prototype, "addLocalNotificationForIOS", null);
 __decorate([
     Cordova(),
     __metadata("design:type", Function),
     __metadata("design:paramtypes", [Object]),
-    __metadata("design:returntype", Observable)
+    __metadata("design:returntype", void 0)
 ], JPushPlugin.prototype, "deleteLocalNotificationWithIdentifierKeyInIOS", null);
 __decorate([
     Cordova(),
     __metadata("design:type", Function),
     __metadata("design:paramtypes", []),
-    __metadata("design:returntype", Observable)
+    __metadata("design:returntype", void 0)
 ], JPushPlugin.prototype, "clearAllLocalNotifications", null);
 __decorate([
     Cordova(),
     __metadata("design:type", Function),
     __metadata("design:paramtypes", [Object]),
-    __metadata("design:returntype", Observable)
+    __metadata("design:returntype", void 0)
 ], JPushPlugin.prototype, "startLogPageView", null);
 __decorate([
     Cordova(),
     __metadata("design:type", Function),
     __metadata("design:paramtypes", [Object]),
-    __metadata("design:returntype", Observable)
+    __metadata("design:returntype", void 0)
 ], JPushPlugin.prototype, "stopLogPageView", null);
 __decorate([
     Cordova(),
     __metadata("design:type", Function),
-    __metadata("design:paramtypes", []),
-    __metadata("design:returntype", Observable)
+    __metadata("design:paramtypes", [Object, Object]),
+    __metadata("design:returntype", void 0)
 ], JPushPlugin.prototype, "beginLogPageView", null);
 __decorate([
     Cordova(),
     __metadata("design:type", Function),
     __metadata("design:paramtypes", []),
-    __metadata("design:returntype", Observable)
+    __metadata("design:returntype", void 0)
 ], JPushPlugin.prototype, "setDebugModeFromIos", null);
 __decorate([
     Cordova(),
     __metadata("design:type", Function),
     __metadata("design:paramtypes", []),
-    __metadata("design:returntype", Observable)
+    __metadata("design:returntype", void 0)
 ], JPushPlugin.prototype, "setLogOFF", null);
 __decorate([
     Cordova(),
     __metadata("design:type", Function),
     __metadata("design:paramtypes", []),
-    __metadata("design:returntype", Observable)
+    __metadata("design:returntype", void 0)
 ], JPushPlugin.prototype, "setCrashLogON", null);
 __decorate([
     Cordova(),
     __metadata("design:type", Function),
-    __metadata("design:paramtypes", []),
-    __metadata("design:returntype", Observable)
+    __metadata("design:paramtypes", [Object, Object]),
+    __metadata("design:returntype", void 0)
 ], JPushPlugin.prototype, "setLocation", null);
 __decorate([
     Cordova(),
     __metadata("design:type", Function),
     __metadata("design:paramtypes", []),
-    __metadata("design:returntype", Observable)
+    __metadata("design:returntype", void 0)
 ], JPushPlugin.prototype, "isPlatformIOS", null);
 __decorate([
     Cordova(),
     __metadata("design:type", Function),
-    __metadata("design:paramtypes", []),
-    __metadata("design:returntype", Observable)
+    __metadata("design:paramtypes", [Object, Object]),
+    __metadata("design:returntype", void 0)
 ], JPushPlugin.prototype, "addDismissActions", null);
 JPushPlugin = __decorate([
     Plugin({
