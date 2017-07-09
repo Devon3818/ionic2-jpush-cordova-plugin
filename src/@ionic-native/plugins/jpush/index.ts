@@ -54,212 +54,212 @@ export class JPushPlugin extends IonicNativePlugin {
    * @return {Promise<any>} Returns a promise that resolves when something happens
    */
   @Cordova()
-  functionName(event: string): Observable<any> {
+  functionName(event: string): Promise<any> {
     return; // We add return; here to avoid any IDE / Compiler errors
   }
 
   @Cordova()
-  init(): Observable<any> {
+  init(): Promise<any> {
     return; // We add return; here to avoid any IDE / Compiler errors
   }
 
   @Cordova()
-  stopPush(): Observable<any> {
+  stopPush(): Promise<any> {
     return; // We add return; here to avoid any IDE / Compiler errors
   }
 
   @Cordova()
-  resumePush(): Observable<any> {
+  resumePush(): Promise<any> {
     return; // We add return; here to avoid any IDE / Compiler errors
   }
 
   @Cordova()
-  isPushStopped(): Observable<any> {
+  isPushStopped(): Promise<any> {
     return; // We add return; here to avoid any IDE / Compiler errors
   }
 
   @Cordova()
-  setDebugMode(bl: boolean): Observable<any> {
+  setDebugMode(bl: boolean): Promise<any> {
     return; // We add return; here to avoid any IDE / Compiler errors
   }
 
   @Cordova()
-  getRegistrationID(): Observable<any> {
+  getRegistrationID(): Promise<any> {
     return; // We add return; here to avoid any IDE / Compiler errors
   }
 
   @Cordova()
-  setTagsWithAlias(arg1: any, arg2: any): Observable<any> {
+  setTagsWithAlias(arg1: any, arg2: any): Promise<any> {
     return; // We add return; here to avoid any IDE / Compiler errors
   }
 
   @Cordova()
-  setTags(arg1: any): Observable<any> {
+  setTags(arg1: any): Promise<any> {
     return; // We add return; here to avoid any IDE / Compiler errors
   }
 
   @Cordova()
-  setAlias(arg1: any): Observable<any> {
+  setAlias(arg1: any): Promise<any> {
     return; // We add return; here to avoid any IDE / Compiler errors
   }
 
   @Cordova()
-  getUserNotificationSettings(): Observable<any> {
+  getUserNotificationSettings(): Promise<any> {
     return; // We add return; here to avoid any IDE / Compiler errors
   }
 
   @Cordova()
-  receiveMessageInAndroidCallback(): Observable<any> {
+  receiveMessageInAndroidCallback(): Promise<any> {
     return; // We add return; here to avoid any IDE / Compiler errors
   }
 
   @Cordova()
-  openNotificationInAndroidCallback(): Observable<any> {
+  openNotificationInAndroidCallback(): Promise<any> {
     return; // We add return; here to avoid any IDE / Compiler errors
   }
 
   @Cordova()
-  setStatisticsOpen(bl: boolean): Observable<any> {
+  setStatisticsOpen(bl: boolean): Promise<any> {
     return; // We add return; here to avoid any IDE / Compiler errors
   }
 
   @Cordova()
-  reportNotificationOpened(id: any): Observable<any> {
+  reportNotificationOpened(id: any): Promise<any> {
     return; // We add return; here to avoid any IDE / Compiler errors
   }
 
   @Cordova()
-  clearAllNotification(): Observable<any> {
+  clearAllNotification(): Promise<any> {
     return; // We add return; here to avoid any IDE / Compiler errors
   }
 
   @Cordova()
-  clearNotificationById(id: any): Observable<any> {
+  clearNotificationById(id: any): Promise<any> {
     return; // We add return; here to avoid any IDE / Compiler errors
   }
 
   @Cordova()
-  setPushTime(): Observable<any> {
+  setPushTime(): Promise<any> {
     return; // We add return; here to avoid any IDE / Compiler errors
   }
 
   @Cordova()
-  setSilenceTime(): Observable<any> {
+  setSilenceTime(): Promise<any> {
     return; // We add return; here to avoid any IDE / Compiler errors
   }
 
   @Cordova()
-  setBasicPushNotificationBuilder(): Observable<any> {
+  setBasicPushNotificationBuilder(): Promise<any> {
     return; // We add return; here to avoid any IDE / Compiler errors
   }
 
   @Cordova()
-  setCustomPushNotificationBuilder(): Observable<any> {
+  setCustomPushNotificationBuilder(): Promise<any> {
     return; // We add return; here to avoid any IDE / Compiler errors
   }
 
   @Cordova()
-  setLatestNotificationNum(arg1: any): Observable<any> {
+  setLatestNotificationNum(arg1: any): Promise<any> {
     return; // We add return; here to avoid any IDE / Compiler errors
   }
 
   @Cordova()
-  addLocalNotification(): Observable<any> {
+  addLocalNotification(): Promise<any> {
     return; // We add return; here to avoid any IDE / Compiler errors
   }
 
   @Cordova()
-  removeLocalNotification(arg1: any): Observable<any> {
+  removeLocalNotification(arg1: any): Promise<any> {
     return; // We add return; here to avoid any IDE / Compiler errors
   }
 
   @Cordova()
-  clearLocalNotifications(): Observable<any> {
+  clearLocalNotifications(): Promise<any> {
     return; // We add return; here to avoid any IDE / Compiler errors
   }
 
   @Cordova()
-  startJPushSDK(): Observable<any> {
+  startJPushSDK(): Promise<any> {
     return; // We add return; here to avoid any IDE / Compiler errors
   }
 
   @Cordova()
-  setBadge(arg1: any): Observable<any> {
+  setBadge(arg1: any): Promise<any> {
     return; // We add return; here to avoid any IDE / Compiler errors
   }
 
   @Cordova()
-  resetBadge(): Observable<any> {
+  resetBadge(): Promise<any> {
     return; // We add return; here to avoid any IDE / Compiler errors
   }
 
   @Cordova()
-  setApplicationIconBadgeNumber(arg1: any): Observable<any> {
+  setApplicationIconBadgeNumber(arg1: any): Promise<any> {
     return; // We add return; here to avoid any IDE / Compiler errors
   }
 
   @Cordova()
-  getApplicationIconBadgeNumber(): Observable<any> {
+  getApplicationIconBadgeNumber(): Promise<any> {
     return; // We add return; here to avoid any IDE / Compiler errors
   }
 
   @Cordova()
-  addLocalNotificationForIOS(): Observable<any> {
+  addLocalNotificationForIOS(): Promise<any> {
     return; // We add return; here to avoid any IDE / Compiler errors
   }
 
   @Cordova()
-  deleteLocalNotificationWithIdentifierKeyInIOS(arg1: any): Observable<any> {
+  deleteLocalNotificationWithIdentifierKeyInIOS(arg1: any): Promise<any> {
     return; // We add return; here to avoid any IDE / Compiler errors
   }
 
   @Cordova()
-  clearAllLocalNotifications(): Observable<any> {
+  clearAllLocalNotifications(): Promise<any> {
     return; // We add return; here to avoid any IDE / Compiler errors
   }
 
   @Cordova()
-  startLogPageView(arg1: any): Observable<any> {
+  startLogPageView(arg1: any): Promise<any> {
     return; // We add return; here to avoid any IDE / Compiler errors
   }
 
   @Cordova()
-  stopLogPageView(arg1: any): Observable<any> {
+  stopLogPageView(arg1: any): Promise<any> {
     return; // We add return; here to avoid any IDE / Compiler errors
   }
 
   @Cordova()
-  beginLogPageView(): Observable<any> {
+  beginLogPageView(): Promise<any> {
     return; // We add return; here to avoid any IDE / Compiler errors
   }
 
   @Cordova()
-  setDebugModeFromIos(): Observable<any> {
+  setDebugModeFromIos(): Promise<any> {
     return; // We add return; here to avoid any IDE / Compiler errors
   }
 
   @Cordova()
-  setLogOFF(): Observable<any> {
+  setLogOFF(): Promise<any> {
     return; // We add return; here to avoid any IDE / Compiler errors
   }
 
   @Cordova()
-  setCrashLogON(): Observable<any> {
+  setCrashLogON(): Promise<any> {
     return; // We add return; here to avoid any IDE / Compiler errors
   }
 
   @Cordova()
-  setLocation(): Observable<any> {
+  setLocation(): Promise<any> {
     return; // We add return; here to avoid any IDE / Compiler errors
   }
 
   @Cordova()
-  isPlatformIOS(): Observable<any> {
+  isPlatformIOS(): Promise<any> {
     return; // We add return; here to avoid any IDE / Compiler errors
   }
 
   @Cordova()
-  addDismissActions(): Observable<any> {
+  addDismissActions(): Promise<any> {
     return; // We add return; here to avoid any IDE / Compiler errors
   }
 
